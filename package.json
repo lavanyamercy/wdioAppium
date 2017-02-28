@@ -1,0 +1,17 @@
+{
+  "name": "appiumtest",
+  "description": "appiumtest",
+  "version": "1.0.0",
+  "author": "lavanya@guidewire.com",
+  "scripts": {
+    "_wdio": "wdio"
+  },
+  "engines": {
+    "node": ">= 6.2.2"
+  },
+  "dependencies": {
+    "mocha": "^3.2.0",
+    "wdio-appium-service": "^0.2.3",
+    "webdriverio": "4.6.2"
+  }
+}
