@@ -37,12 +37,6 @@ exports.config = {
     deviceName: 'Samsung Galaxy S7 Device',
     deviceOrientation: 'portrait',
     platformName: 'Android'
-    //chromedriverExecutable: '/Users/lmani/Downloads/chromedriver'
-    //automationName: 'uiautomator2'
-    //app: 'https://github.com/appium/sample-code/blob/master/sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk?raw=true',
-    //waitforTimeout: 3000000,
-    //commandTimeout: 3000000
-
   }],
 
   services: ['appium'],
@@ -81,56 +75,14 @@ exports.config = {
   // Default timeout for all waitForXXX commands.
   waitforTimeout: 5000,
   //
-  // Initialize the browser instance with a WebdriverIO plugin. The object should have the
-  // plugin name as key and the desired plugin options as property. Make sure you have
-  // the plugin installed before running any tests. The following plugins are currently
-  // available:
-  // WebdriverCSS: https://github.com/webdriverio/webdrivercss
-  // WebdriverRTC: https://github.com/webdriverio/webdriverrtc
-  // Browserevent: https://github.com/webdriverio/browserevent
-  // TODO: uncomment if platinum is used
-/*  plugins: {
-    platinum: {
-      logDir: './platinum/logs',
-      baselineDir: './platinum/baseline',
-      testDir: './src/__tests__/browserTest/spec'
-    }
-  },*/
-  //
-  // Framework you want to run your specs with.
-  // The following are supported: mocha, jasmine and cucumber
-  // see also: http://webdriver.io/guide/testrunner/frameworks.html
-  //
-  // Make sure you have the node package for the specific framework installed before running
-  // any tests. If not please install the following package:
-  // Mocha: `$ npm install mocha`
-  // Jasmine: `$ npm install jasmine`
-  // Cucumber: `$ npm install cucumber`
-  framework: 'mocha',
-  //
-  // Test reporter for stdout.
-  // The following are supported: dot (default), spec and xunit
-  // see also: http://webdriver.io/guide/testrunner/reporters.html
-  reporter: 'spec',
 
-  //
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
   mochaOpts: {
     ui: 'bdd',
     compilers: ['js:babel-core/register'],
     timeout: 20000000 //overwriting mocha's default test timeout which is 2000 ms.
-  },
+  }
 
-   // Function to be executed before a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
-  // TODO: uncomment if platinum is used
-/*  beforeTest(test) {
-    browser.initTest(test); // eslint-disable-line
-  },
-
-   // Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
-  afterTest(test) {
-    browser.endTest(test); // eslint-disable-line
-  }*/
 };
 
